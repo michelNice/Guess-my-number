@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    font-size:1rem;
+    background:#000;
+    color: #fff;
+}
+
+@mixin button{
+    padding:1rem 2rem;
+    font-size:1.1rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+@mixin flex{
+    display:flex;
+    justify-content:center;
+}
+
+.crl{clear: both;}
+.header{margin:2rem 0;}
+
+
+
+.flex-columns{
+    @include flex();
+    .column{
+        padding:0 7rem;
+
+
+        .btn-again{
+            @include button();
+          
+        }
+    }
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    .content{
+        
+        h1{
+            margin: 3rem 0;
+            font-size: 2rem;
+        }
+
+        .box{
+            width: 170px;
+            height: 150px;
+            background: #fff;
+            color: #000;
+            @include flex();
+            align-items: center;
+          
+        }
+    }
+}
+
+@media(max-width:73rem){
+    
+@mixin button{
+    padding:0.6rem 0.8rem;
+    font-size:0.8rem;
+}
+
+.header{margin:2rem 0;}
+
+.flex-columns{
+    .column{
+        padding:0 1rem;
+
+        p{
+          font-size: 0.6rem;
+        }
+
+        .btn-again{
+            @include button();
+          
+        }
+    }
+
+
+}
+
+.main-page{
+    .content{
+        h1{
+            font-size:0.8rem;
+        }
+
+      
+    }
+}
+
+
+}

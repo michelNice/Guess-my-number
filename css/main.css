@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+.crl {
+  clear: both;
+}
+
+.header {
+  margin: 2rem 0;
+}
+
+.flex-columns {
+  display: flex;
+  justify-content: center;
+}
+.flex-columns .column {
+  padding: 0 7rem;
+}
+.flex-columns .column .btn-again {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-page .content h1 {
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+.main-page .content .box {
+  width: 170px;
+  height: 150px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 73rem) {
+  .header {
+    margin: 2rem 0;
+  }
+  .flex-columns .column {
+    padding: 0 1rem;
+  }
+  .flex-columns .column p {
+    font-size: 0.6rem;
+  }
+  .flex-columns .column .btn-again {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .main-page .content h1 {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
