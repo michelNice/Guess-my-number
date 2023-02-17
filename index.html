@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/img/icon.png">
     <title>Guess my number</title>
 </head>
 <body>
     <header class="header">
         <div class="flex-columns">
             <div class="column">
-                <button class="btn-again">Again</button>
+                <button class="btn-again">Again!</button>
             </div>
             <div class="column">
-                <p>(Between 1 and 20)</p>
+                <p class="between">(Between 1 and 20)</p>
             </div>
         </div>
+        <h1>Guess my number</h1>
+        <div class="box">?</div>
     </header>
     <main class="main-page">
-        <section class="content">
-            <h1>Guess My Number!</h1>
-            <div class="box">?</div>
-        </section>
+        <div class="flex-itemns">
+            <div class="item">
+                <input type="text" name="number" id="number">
+                <button class="btn-check">Check!</button>
+            </div>
+            <div class="item">
+                <p class="messagem">Start guessing...</p>
+                <p>🥇 Score:<span class="score"></span></p>
+                <p>💯 Highscore: <span class="highscore">0</span></p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
+
+
