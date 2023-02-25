@@ -38,6 +38,10 @@ document.querySelector('.btn-check').addEventListener('click',function(){
         if(score > highscore){
             highscore = highscore + score 
             high(highscore)
+
+            if(highscore > 10){
+                messagem('🏆 You are the winner!')
+            }
         }
     }else if(input !== randomNumber){
         if(score > 0){
@@ -57,7 +61,7 @@ document.querySelector('.btn-again').addEventListener('click',function(){
     highscore = 0
 
     randomNumber = Math.trunc(Math.random() * 20) + 1
-    
+
     inputColor('#000')
 
     high(highscore)
