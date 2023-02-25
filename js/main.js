@@ -20,6 +20,10 @@ const high = function(scorePoints){
     document.querySelector('.highscore').textContent = scorePoints
 }
 
+const inputColor = function(color){
+    document.querySelector('#input').style.background = color
+}
+
 document.querySelector('.btn-check').addEventListener('click',function(){
     const input = Number(document.querySelector('#input').value)
     randomNumber = Math.trunc(Math.random() * 20) + 1
@@ -30,7 +34,7 @@ document.querySelector('.btn-check').addEventListener('click',function(){
         inputNumber(randomNumber)
         messagem('🎉 Correct number!')
         color('#60b347')
-
+        inputColor('#60b347')
         if(score > highscore){
             highscore = highscore + score 
             high(highscore)
@@ -52,7 +56,12 @@ document.querySelector('.btn-again').addEventListener('click',function(){
 
     highscore = 0
 
+    randomNumber = Math.trunc(Math.random() * 20) + 1
+    
+    inputColor('#000')
+
     high(highscore)
+
     scoreFunction(score)
 
     messagem('Start guessing...')
@@ -61,7 +70,7 @@ document.querySelector('.btn-again').addEventListener('click',function(){
 
     color('#000')
 
-    randomNumber = Math.trunc(Math.random() * 20) + 1
+    
 })
 
 

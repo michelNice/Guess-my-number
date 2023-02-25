@@ -61,13 +61,14 @@ body {
   align-items: center;
   margin: 0 4rem;
 }
-.main-page .flex-itemns .item:first-child input {
+.main-page .flex-itemns .item:first-child #input {
   background: #000;
   border: 2px solid #fff;
   width: 20rem;
   height: 5rem;
   color: #fff;
   font-size: 3rem;
+  outline-color: #fff;
 }
 .main-page .flex-itemns .item:first-child .btn-check {
   padding: 1rem 2rem;
