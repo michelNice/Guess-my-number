@@ -38,10 +38,6 @@ document.querySelector('.btn-check').addEventListener('click',function(){
         if(score > highscore){
             highscore = highscore + score 
             high(highscore)
-
-            if(highscore > 10){
-                messagem('🏆 You are the winner!')
-            }
         }
     }else if(input !== randomNumber){
         if(score > 0){
