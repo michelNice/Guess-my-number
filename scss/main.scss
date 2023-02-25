@@ -96,7 +96,11 @@ body{
         .item:nth-child(2){
             
             .messagem{
-                padding-bottom:7rem;
+                padding-bottom:6rem;
+            }
+
+            p:nth-child(2){
+                padding-bottom:1rem;
             }
         }
     }
