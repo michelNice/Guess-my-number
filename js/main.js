@@ -90,29 +90,18 @@ const highscores =  document.querySelector('.highscore')
 const guessNumbers = document.querySelector('.number')
 const inputColors = document.querySelector('#input')
 
-const messagem = (msg)=>{
-   messagems.innerText = msg
-}
+const messagem = (msg)=> messagems.innerText = msg
 
-const inputNumber = (guessNumber)=>{
-    guessNumbers.innerText = guessNumber
-}
+const inputNumber = (guessNumber)=> guessNumbers.innerText = guessNumber
 
-const scoreFunction = (points)=>{
-   scores.innerText = points
-}
+const scoreFunction = (points)=> scores.innerText = points
 
-const color =(colorBody)=>{
-    bodys.style.background = colorBody
-}
+const color =(colorBody)=> bodys.style.background = colorBody
 
-const inputColor = (input)=>{
-    inputColors.style.background = input
-}
+const inputColor = (input)=> inputColors.style.background = input
 
-const high = (scorePoints)=>{
-   highscores.innerText = scorePoints
-}
+
+const high = (scorePoints)=> highscores.innerText = scorePoints
 
 
 const checkNumber = ()=>{
