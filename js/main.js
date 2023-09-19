@@ -116,7 +116,8 @@ const high = (scorePoints)=>{
 
 
 const checkNumber = ()=>{
-   const input = Number(document.querySelector('#input').value) 
+   const input = Number(document.querySelector('#input').value)
+
    randomNumber = Math.trunc(Math.random() * 20) + 1
 
    if(!input){
