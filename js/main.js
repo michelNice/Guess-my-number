@@ -77,6 +77,9 @@ document.querySelector('.btn-again').addEventListener('click',function(){
 })
 */
 
+
+
+
 'use strict'
 let highscore = 0
 let score = 20
@@ -90,22 +93,25 @@ const highscores =  document.querySelector('.highscore')
 const guessNumbers = document.querySelector('.number')
 const inputColors = document.querySelector('#input')
 
-const messagem = (msg)=> messagems.innerText = msg
-
-const inputNumber = (guessNumber)=> guessNumbers.innerText = guessNumber
-
-const scoreFunction = (points)=> scores.innerText = points
-
-const color =(colorBody)=> bodys.style.background = colorBody
-
-const inputColor = (input)=> inputColors.style.background = input
 
 
-const high = (scorePoints)=> highscores.innerText = scorePoints
 
+const messagem = msg=> messagems.innerText = msg
+
+const inputNumber = guessNumber => guessNumbers.innerText = guessNumber
+
+const scoreFunction = points => scores.innerText = points
+
+const color = colorBody => bodys.style.background = colorBody
+
+const inputColor = input => inputColors.style.background = input
+
+const high = scorePoints => highscores.innerText = scorePoints
 
 const checkNumber = ()=>{
-   const input = Number(document.querySelector('#input').value)
+   let input = Number(document.querySelector('#input').value)
+
+
 
    randomNumber = Math.trunc(Math.random() * 20) + 1
 
@@ -116,6 +122,8 @@ const checkNumber = ()=>{
          messagem('🎉 Correct number!')
          color('#60b347')
          inputColor('#60b347')
+
+         input = ''
          if(score > highscore){
             highscore = highscore + score 
             high(highscore)
@@ -153,6 +161,11 @@ const resetAgain = ()=>{
 
 btn__again.addEventListener('click',resetAgain)
 btn__check.addEventListener('click',checkNumber)
+
+
+
+
+
 
 
 
