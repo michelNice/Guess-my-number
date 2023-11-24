@@ -73,7 +73,6 @@ document.querySelector('.btn-again').addEventListener('click',function(){
 
     color('#000')
 
-    
 })
 */
 
